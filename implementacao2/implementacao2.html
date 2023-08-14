@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Implementação 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="title">
+        <h1>Implementação 2</h1>
+    </div>
+    <br>
+    <div id="sideBar">
+        <a href="../index.html"><button class="btn btn-danger btn-sm">Voltar</button></a>
+        <br>
+        <br>
+        <br>
+        <label for="fileinput" class="custom-file">
+            +
+        </label>
+        <input type="file" accept="image/*,.pgm" id="fileinput" />
+        <br>
+    <label>Translation X</label>
+    <input type="range" id="translationX" value="0" min="0" max="960">
+    <label>Translation Y</label>
+    <input type="range" id="translationY" value="0" min="0" max="295">
+    <label>Rotate</label>
+    <input type="range" id="rotate" value="0" min="0" max="360">
+    <br>
+    </div>
+
+    <div id="canvasDiv">
+        <canvas  style="background-color: gray;" id="canvas" width="1120" height="515"></canvas>
+    </div>
+
+    <script src="implementacao2.js"></script>
+</body>
+
+</html>

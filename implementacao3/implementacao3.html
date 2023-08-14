@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Implementação 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="title">
+        <h1>Implementação 3</h1>
+    </div>
+
+
+
+    <br>
+    <div id="sideBar">
+        <a href="../index.html"><button class="btn btn-danger btn-sm">Voltar</button></a>
+        <br>
+        <br>
+        <br>
+        <label for="fileinput" class="custom-file">
+            +
+        </label>
+        <input type="file" accept="image/*,.pgm" id="fileinput" />
+        <br>
+        <br>
+        <button class="btn btn-info" id="red">RED</button>
+        <button class="btn btn-primary" id="green">GREEN</button>
+        <button class="btn btn-info" id="blue">BLUE</button>
+        <button class="btn btn-primary" id="gray">GRAY</button>
+        <button class="btn btn-info" id="cian">CIAN</button>
+        <button class="btn btn-primary" id="margenta">MARGENTA</button>
+        <button class="btn btn-info" id="yellow">YELLOW</button>
+        <button class="btn btn-primary" id="key">KEY</button>
+        <button class="btn btn-primary" id="yuv">YUV</button>
+    </div>
+
+    <div id="sideBarRight">
+        <br>
+        <br>
+        <br>
+        <br>
+        <label>HSL</label><br><br>
+        <label>HUE </label>
+        <input type="range" id="h" value="0" min="0" max="360"><br>
+        <label>Saturation </label>
+        <input type="range" id="s" value="0" min="0" max="100"><br>
+        <label>Luminance </label>
+        <input type="range" id="l" value="0" min="0" max="100"><br>
+
+        <br>
+        <label>HSB</label><br><br>
+        <label>HUE </label>
+        <input type="range" id="hb" value="0" min="0" max="360"><br>
+        <label>Saturation </label>
+        <input type="range" id="sb" value="0" min="0" max="100"><br>
+        <label>Brightness </label>
+        <input type="range" id="bb" value="0" min="0" max="100"><br>
+        
+    </div>
+
+    <div id="canvasDiv">
+        <canvas id="canvas" width="0" height="0"></canvas>
+        <canvas id="hslcanvas" width="0" height="0"></canvas>
+        <canvas id="hsbcanvas" width="0" height="0"></canvas>
+        <canvas id="r" width="0" height="0"></canvas>
+        <canvas id="g" width="0" height="0"></canvas>
+        <canvas id="b" width="0" height="0"></canvas>
+        <canvas id="gr" width="0" height="0"></canvas>
+        <canvas id="c" width="0" height="0"></canvas>
+        <canvas id="m" width="0" height="0"></canvas>
+        <canvas id="y" width="0" height="0"></canvas>
+        <canvas id="k" width="0" height="0"></canvas>
+        <canvas id="yuvcanvas" width="0" height="0"></canvas>
+        <canvas id="yucanvas" width="0" height="0"></canvas>
+        <canvas id="yvcanvas" width="0" height="0"></canvas>
+        <canvas id="uvcanvas" width="0" height="0"></canvas>
+        
+    </div>
+
+    <script src="implementacao3.js"></script>
+</body>
+
+</html>

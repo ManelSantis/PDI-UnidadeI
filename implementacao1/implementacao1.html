@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Implementação 1</title>
+</head>
+
+<body>
+    <div id="title">
+        <h2>Implementação 1</h2>
+    </div>
+    <div id="sideBar">
+        <a href="../index.html"><button class="btn btn-danger btn-sm">Voltar</button></a>
+        <br>
+        <br>
+        <br>
+        <label for="fileinput1" class="custom-file">
+            +
+        </label>
+        <label for="fileinput2" class="custom-file">
+            +
+        </label>
+        <br>
+        <input class="form-control" type="file" accept="image/*,.pgm" id="fileinput1" tittle="" />
+        <input class="form-control" type="file" accept="image/*,.pgm" id="fileinput2" />
+        <br>
+        <button class="btn btn-info" id="somar">Somar</button>
+        <button class="btn btn-primary" id="subtrair">Subtrair</button>
+        <button class="btn btn-info" id="multiplicar">Multiplicar</button>
+        <button class="btn btn-primary" id="dividir">Dividir</button>
+        <button class="btn btn-info" id="andd">AND</button>
+        <button class="btn btn-primary" id="orr">OR</button>
+        <button class="btn btn-info" id="xorr">XOR</button>
+        <br>
+        <input class="form-check-input" type="checkbox" id="trunk">
+        <label class="form-check-label" for="trunk">Truncar</label>
+    </div>
+
+    <div id="canvas">
+        <canvas id="canvas1" width="0" height="0"></canvas>
+        <canvas id="canvas2" width="0" height="0"></canvas>
+        <canvas id="soma" width="0" height="0"></canvas>
+        <canvas id="sub" width="0" height="0"></canvas>
+        <canvas id="mult" width="0" height="0"></canvas>
+        <canvas id="divi" width="0" height="0"></canvas>
+        <canvas id="and" width="0" height="0"></canvas>
+        <canvas id="ors" width="0" height="0"></canvas>
+        <canvas id="xor" width="0" height="0"></canvas>
+    </div>
+
+    <script type="module" src="implementacao1.js"></script>
+</body>
+
+</html>
